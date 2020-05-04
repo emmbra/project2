@@ -1,5 +1,6 @@
 const connection = require('../config/connection');
 const movieQueries = require('../models/movies/movieQueries');
+const example = 'example'
 
 module.exports = {
   getAllMovies: async (req, res) => {
