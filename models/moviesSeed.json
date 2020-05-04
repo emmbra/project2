@@ -1,0 +1,412 @@
+[
+  {
+    "movieTitle": "Once Upon a Time... in Hollywood",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Star Wars: Episode IX - The Rise of Skywalker",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Avengers: Endgame",
+    "movieYear": 2019,
+    "movieRating": 5,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Bad Boys for Life",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Trolls World Tour",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Joker",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Bloodshot",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "The Godfather",
+    "movieYear": 1972,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Jojo Rabbit",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Onward",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Fantasy Island",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Jumanji: The Next Level",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Sonic the Hedgehog",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "The Irishman",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Dolittle",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Men in Black: International",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Pulp Fiction",
+    "movieYear": 1994,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Harry Potter and the Sorcerer's Stone",
+    "movieYear": 2001,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Life of Pi",
+    "movieYear": 2012,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Tenet",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Avengers: Infinity War",
+    "movieYear": 2018,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "The Lord of the Rings: The Fellowship of the Ring",
+    "movieYear": 2001,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Thor: Ragnarok",
+    "movieYear": 2017,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "The Lion King",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Mulan",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 1,
+    "movieAction": 1,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Suicide Squad",
+    "movieYear": 2016,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Blade Runner 2049",
+    "movieYear": 2017,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Guardians of the Galaxy",
+    "movieYear": 2014,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Angel Has Fallen",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Gladiator",
+    "movieYear": 2000,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "The Matrix",
+    "movieYear": 1999,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Frozen II",
+    "movieYear": 2019,
+    "movieRating": 5,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 1,
+    "movieAction": 0,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Titanic",
+    "movieYear": 1997,
+    "movieRating": 5,
+    "movieComments": "",
+    "movieSad": 1,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 1
+  },
+  {
+    "movieTitle": "Black Widow",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Spider-Man: Far from Home",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Wonder Woman 1984",
+    "movieYear": 2020,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Jurassic World",
+    "movieYear": 2015,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Jurassic Park",
+    "movieYear": 1993,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Fight Club",
+    "movieYear": 1999,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Se7en",
+    "movieYear": 1995,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 1,
+    "movieRomance": 0
+  },
+  {
+    "movieTitle": "Yesterday",
+    "movieYear": 2019,
+    "movieRating": 4,
+    "movieComments": "",
+    "movieSad": 0,
+    "movieFunny": 0,
+    "movieAction": 0,
+    "movieRomance": 1
+  }
+]

@@ -12,17 +12,18 @@ module.exports = {
   },
 
   getMoviesByTitle: async (req, res) => {
-    const { movieTitle } = req.body;
+    console.log(req.params);
+    const { movieTitle } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByTitle, movieTitle);
-      res.status(200).json(movies[0]);
+      res.status(200).json(movies);
     } catch (e) {
       res.status(403).json({ e });
     }
   },
 
   getMoviesByYear: async (req, res) => {
-    const { movieYear } = req.body;
+    const { movieYear } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByYear, movieYear);
       res.status(200).json(movies);
@@ -32,7 +33,7 @@ module.exports = {
   },
 
   getMoviesByRating: async (req, res) => {
-    const { movieRating } = req.body;
+    const { movieRating } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByRating, movieRating);
       res.status(200).json(movies);
@@ -42,7 +43,7 @@ module.exports = {
   },
 
   getMoviesByGenre: async (req, res) => {
-    const { movieGenre } = req.body;
+    const { movieGenre } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByGenre, movieGenre);
       res.status(200).json(movies);
@@ -52,7 +53,7 @@ module.exports = {
   },
 
   getMoviesBySad: async (req, res) => {
-    const { movieSad } = req.body;
+    const { movieSad } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesBySad, movieSad);
       res.status(200).json(movies);
@@ -62,20 +63,30 @@ module.exports = {
   },
 
   getMoviesByFunny: async (req, res) => {
-    const { movieFunny } = req.body;
+    const { movieFunny } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByFunny, movieFunny);
-      res.status(200).json(movies[0]);
+      res.status(200).json(movies);
     } catch (e) {
       res.status(403).json({ e });
     }
   },
 
   getMoviesByAction: async (req, res) => {
-    const { movieAction } = req.body;
+    const { movieAction } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByAction, movieAction);
-      res.status(200).json(movies[0]);
+      res.status(200).json(movies);
+    } catch (e) {
+      res.status(403).json({ e });
+    }
+  },
+
+  getMoviesByRomance: async (req, res) => {
+    const { movieRomance } = req.params;
+    try {
+      const [movies] = await connection.query(movieQueries.getMoviesByAction, movieRomance);
+      res.status(200).json(movies);
     } catch (e) {
       res.status(403).json({ e });
     }

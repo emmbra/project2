@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const movieRoutes = require('./movieRoutes/movieRoutes');
+const movieRoutes = require('./movieRoutes');
 
 // /api prepended to everyRoute inside of here
 router.use('/movies', movieRoutes);
