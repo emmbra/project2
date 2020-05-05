@@ -16,7 +16,6 @@ module.exports = {
   },
 
   getMoviesByTitle: async (req, res) => {
-    console.log(req.params);
     const { movieTitle } = req.params;
     try {
       const [movies] = await connection.query(movieQueries.getMoviesByTitle, movieTitle);
@@ -126,20 +125,20 @@ module.exports = {
     }
   },
 
-//   updateMovieRating: async (req, res) => {
-//     const { movieRating } = req.body;
-//     if (!movieRating) {
-//       return res.json({ error: 'You must provide a rating for the movie ' });
-//     }
-//     try {
-// // 'UPDATE movies SET movieRating = ? WHERE id = ?;';
-//       const [response] = await connection.query(movieQueries.updateMovieRating, { movieRating });
-//       const [movies] = await connection.query(movieQueries.getMovieById, response.insertId);
-//       return res.json(movies[0]);
-//     } catch (e) {
-//       return res.status(403).json({ e });
-//     }
-//   },
+  //   updateMovieRating: async (req, res) => {
+  //     const { movieRating } = req.body;
+  //     if (!movieRating) {
+  //       return res.json({ error: 'You must provide a rating for the movie ' });
+  //     }
+  //     try {
+  // // 'UPDATE movies SET movieRating = ? WHERE id = ?;';
+  //       const [response] = await connection.query(movieQueries.updateMovieRating, { movieRating });
+  //       const [movies] = await connection.query(movieQueries.getMovieById, response.insertId);
+  //       return res.json(movies[0]);
+  //     } catch (e) {
+  //       return res.status(403).json({ e });
+  //     }
+  //   },
 
   // updateMovieRating: async (req, res) => {
   // },

@@ -1,11 +1,56 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
 
-const Navbar = () => (
-  <div>
-    <Link to='/counter'>Counter</Link>
-    <Link to='/todos'>Todos</Link>
-  </div>
-);
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Menu } from "semantic-ui-react";
 
-export default Navbar;
+export default class MenuExampleStackable extends Component {
+  state = {};
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+  render() {
+    const { activeItem } = this.state;
+
+    return (
+      <Menu stackable>
+        <Menu.Menu position="right">
+          <Menu.Item>
+            <img
+              src="https://www.clipartmax.com/png/small/47-474783_popcorn-comments-popcorn-icon-png.png"
+              alt="Popcorn Comments - Popcorn Icon Png @clipartmax.com"
+            ></img>
+          </Menu.Item>
+
+            <Menu.Item
+              name="viewMovies"
+              active={activeItem === "viewMovies"}
+              onClick={this.handleItemClick}
+            >
+          <Link to="/viewmovies">
+              View Movies
+              </Link>
+            </Menu.Item>
+
+          <Menu.Item
+            name="rateMovies"
+            active={activeItem === "rateMovies"}
+            onClick={this.handleItemClick}
+          >
+          <Link to="/ratemovies">
+            Rate Movies
+            </Link>
+          </Menu.Item>
+
+          <Menu.Item
+            name="sign-in"
+            active={activeItem === "sign-in"}
+            onClick={this.handleItemClick}
+          >
+            Sign-in
+          </Menu.Item>
+        </Menu.Menu>
+      </Menu>
+    );
+  }
+}
