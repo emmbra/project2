@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
-
 import RenderMovieListOMDB from '../../components/RenderMovieListOMDB';
 
 class MovieSearchOMDB extends Component {
   state = {
-    todos: [],
-    todoInput: ''
+    movies: [],
+    movieInput: ''
   }
 
   async componentDidMount() {
     console.log("Inside componentDidMount");
     try {
-      const { data } = await axios.get('/api/todos');
-      this.setState({ todos: data });
+      const { data } = await axios.get('/api/movies');
+      this.setState({ movies: data });
     } catch (e) {
       console.log(e);
     }
@@ -28,27 +27,9 @@ class MovieSearchOMDB extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     try {
-      const { data } = await axios.post('/api/todos', {text: this.state.todoInput });
-      const todos = [...this.state.todos, data];
-      this.setState({ todos, todoInput: '' });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  handleDeleteTodo = async id => {
-    try {
-      const { data: todos } = await axios.delete(`/api/todos/${id}`);
-      this.setState({ todos });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  handleUpdateCompletedTodo = async id => {
-    try {
-      const { data: todos } = await axios.patch(`/api/todos/${id}`);
-      this.setState({ todos });
+      const { data } = await axios.post('/api/movies', {text: this.state.movieInput });
+      const movies = [...this.state.movies, data];
+      this.setState({ movies, movieInput: '' });
     } catch (e) {
       console.log(e);
     }
@@ -59,21 +40,21 @@ class MovieSearchOMDB extends Component {
     console.log(this.props);
     return (
       <div>
-        <RenderTodoList
-          items={this.state.todos}
-          handleUpdateCompletedTodo={this.handleUpdateCompletedTodo}
-          handleDelete={this.handleDeleteTodo}/>
         <form>
           <input
-            name="todoInput"
-            value={this.state.todoInput}
+            name="movieInput"
+            placeholder="Enter a movie title..."
+            value={this.state.movieInput}
             onChange={this.handleInputChange}
           />
-          <button onClick={(e) => this.handleSubmit(e)}>Add todo</button>
+          <button onClick={(e) => this.handleSubmit(e)}>Search for movie</button>
         </form>
+        <RenderMovieListOMDB
+          items={this.state.movies}
+        />
       </div>
     );
   }
 }
 
-export default TodoForm;
+export default MovieSearchOMDB;

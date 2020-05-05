@@ -4,7 +4,7 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 
 
 const RenderMovieListMoviesDB = props => {
-  const renderTodoListItems = () => {
+  const renderMovieListMoviesDB = () => {
     if (props.items.length === 0) {
       return <PacmanLoader/>;
     } else {
@@ -21,7 +21,7 @@ const RenderMovieListMoviesDB = props => {
   }
   return (
     <ul>
-      { renderTodoListItems() }
+      { renderMovieListMoviesDB() }
     </ul>
   );
 };
