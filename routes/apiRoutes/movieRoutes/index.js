@@ -20,9 +20,9 @@ router.route('/year/:movieYear')
 
 // /api/movies/:rating
 router.route('/rating/:movieRating')
-  .get(movieController.getMoviesByRating)
-  // .post(movieController.addMovieRating)
-  // .patch(movieController.updateMovieRating);
+  .get(movieController.getMoviesByRating);
+// .post(movieController.addMovieRating)
+// .patch(movieController.updateMovieRating);
 
 // // /api/movies/:genre
 router.route('/genre/movieSad')
@@ -36,5 +36,8 @@ router.route('/genre/movieRomance')
 
 router.route('/genre/movieAction')
   .get(movieController.getMoviesByAction);
+
+router.route('/omdb/:movieTitle')
+  .get(movieController.OMDBMovieSearch);
 
 module.exports = router;

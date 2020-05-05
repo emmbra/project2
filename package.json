@@ -1,7 +1,6 @@
 {
   "name": "mysqlexpresstodo",
   "version": "1.0.0",
-  "description": "",
   "main": "routes/index.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -16,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mysql2": "^2.1.0"
@@ -28,5 +28,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmbra/project2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emmbra/project2/issues"
+  },
+  "homepage": "https://github.com/emmbra/project2#readme",
+  "description": ""
 }

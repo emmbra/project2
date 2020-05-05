@@ -1,6 +1,7 @@
+const axios = require('axios');
 const connection = require('../config/connection');
 const movieQueries = require('../models/movies/movieQueries');
-const example = 'example'
+
 
 module.exports = {
   getAllMovies: async (req, res) => {
@@ -93,13 +94,26 @@ module.exports = {
     }
   },
 
+  OMDBMovieSearch: async (req, res) => {
+    const { movieTitle } = req.params;
+    try {
+      const { data } = await axios.get(`https://www.omdbapi.com/?t=${movieTitle}&apikey=OMDB_API`);
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      res.status(403).json({ error });
+    }
+  },
+
+
   // addMovieRating: async (req, res) => {
   //   const { movieRating } = req.body;
   //   if (!movieRating) {
   //     return res.json({ error: 'You must provide a rating for the movie '});
   //   }
   //   try {
-  //     const [response] = await connection.query(movieQueries.addTodo, { text });
+  // movieRating, movieComments, movieSad, movieFunny, movieAction, movieRomance
+  //     const [response] = await connection.query(movieQueries.addMovieRating, { text });
   //     const [movies] = await connection.query(todoQueries.findTodoById, response.insertId);
   //     return res.json(movies[0]);
   //   } catch (e) {
