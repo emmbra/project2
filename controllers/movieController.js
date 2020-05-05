@@ -97,7 +97,7 @@ module.exports = {
   OMDBMovieSearch: async (req, res) => {
     const { movieTitle } = req.params;
     try {
-      const { data } = await axios.get(`https://www.omdbapi.com/?t=${movieTitle}&apikey=OMDB_API`);
+      const { data } = await axios.get(`https://www.omdbapi.com/?t=${movieTitle}&apikey=${process.env.OMDB_API}`);
       console.log(data);
       res.status(200).json(data);
     } catch (error) {
@@ -105,6 +105,21 @@ module.exports = {
     }
   },
 
+  addRating: async (req, res) => {
+    const { rate } = req.body;
+    if (!rate) {
+      return res.json({ error: 'You must provide rate for movies '});
+    }
+    try {
+      const [response] = await connection.query(movieQueries.addMovieRating, { rate });
+      console.log(response);
+      const [rate] = await connection.query(movieQueries.getMoviesByTitle, response.insertRate);
+      return res.json(rate[0]);
+    } catch (e) {
+      return res.status(403).json({ e });
+    }
+  },
+  
 
   // addMovieRating: async (req, res) => {
   //   const { movieRating } = req.body;

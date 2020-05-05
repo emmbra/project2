@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 // The filename index is a special name in Node
 // If we require a folder in Node and we don't specify a file name
