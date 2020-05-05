@@ -14,14 +14,14 @@ router.route('/title/:movieTitle')
 router.route('/year/:movieYear')
   .get(movieController.getMoviesByYear);
 
-// // /api/movies/:genre
-// router.route('/:genre')
-//   .get(movieController.getMoviesByGenre);
-
 // /api/movies/:rating
 router.route('/rating/:movieRating')
   .get(movieController.getMoviesByRating);
-// .post(movieController.addMovieRating)
+
+// /api/movies/addmovie
+router.route('/addmovie/')
+  .get(movieController.getMoviesByTitle)
+  .post(movieController.addMovie);
 // .patch(movieController.updateMovieRating);
 
 // // /api/movies/:genre
@@ -39,5 +39,14 @@ router.route('/genre/movieAction')
 
 router.route('/omdb/:movieTitle')
   .get(movieController.OMDBMovieSearch);
+
+// // /api/movies/:genre
+// router.route('/:genre')
+//   .get(movieController.getMoviesByGenre);
+
+// router.route('/:movieTitle/:movieYear/:movieGenre')
+//   .get(movieController.)
+
+//   google ? variables for making our own api
 
 module.exports = router;

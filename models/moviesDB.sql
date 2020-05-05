@@ -13,3 +13,6 @@ CREATE TABLE movies (
     movieRomance BOOLEAN,
     PRIMARY KEY(id)
 );
+
+-- join a movie with its ratings table
+-- to get an average of movie rating (average function in SQL)
