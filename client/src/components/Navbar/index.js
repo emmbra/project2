@@ -18,8 +18,8 @@ export default class MenuExampleStackable extends Component {
           <Header as='h2'>
       <Icon name='television' />
       <Header.Content>
-      An Amazing Movie Rating App
-        <Header.Subheader>What's your preferences</Header.Subheader>
+      Marvelous Movies
+        <Header.Subheader>Movies</Header.Subheader>
       </Header.Content>
     </Header>
         <Menu.Menu position="right">

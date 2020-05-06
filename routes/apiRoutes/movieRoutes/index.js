@@ -37,11 +37,13 @@ router.route('/genre/movieRomance')
 router.route('/genre/movieAction')
   .get(movieController.getMoviesByAction);
 
+// // /api/movies/omdb/:movieTitle
 router.route('/omdb/:movieTitle')
   .get(movieController.OMDBMovieSearch);
 
 // /api/movies/:id
 router.route('/:id')
+  .get(movieController.getMovieById)
   .delete(movieController.deleteMovieById);
 
 // // /api/movies/:genre
