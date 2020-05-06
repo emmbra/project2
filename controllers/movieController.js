@@ -95,6 +95,18 @@ module.exports = {
     }
   },
 
+  deleteMovieById: async (req, res) => {
+    const { id } = req.params;
+    try {
+      await connection.query(movieQueries.deleteMovieById, id);
+      // should return to me all of the movies from the database as a response
+      const [movies] = await connection.query(movieQueries.getAllMovies);
+      res.json(movies);
+    } catch (e) {
+      res.status(403).json({ e });
+    }
+  },
+
   OMDBMovieSearch: async (req, res) => {
     const { movieTitle } = req.params;
     try {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import RenderMovieListOMDB from '../../components/RenderMovieListOMDB';
+import RenderMOvieListMoviesDB from '../../components/RenderMovieListMoviesDB';
 
 class MovieSearchOMDB extends Component {
   state = {
@@ -24,7 +25,20 @@ class MovieSearchOMDB extends Component {
     this.setState({ [name]: value });
   }
 
-  handleSubmit = async event => {
+
+
+  handleSubmitOMDB = async event => {
+    event.preventDefault();
+    try {
+      const movieTitle = this.props.match.params.movieTitle;
+      const { data } = await axios.get(`/api/title/${movieTitle}`);
+      this.setState({ movies:data, movieInput: '' });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  handleSubmitMoviesDB = async event => {
     event.preventDefault();
     try {
       const { data } = await axios.post('/api/movies', {text: this.state.movieInput });
@@ -47,7 +61,8 @@ class MovieSearchOMDB extends Component {
             value={this.state.movieInput}
             onChange={this.handleInputChange}
           />
-          <button onClick={(e) => this.handleSubmit(e)}>Search for movie</button>
+          <button onClick={(e) => this.handleSubmitOMDB(e)}>Search rated movies</button>
+          <button onClick={(e) => this.handleSubmitMoviesDB(e)}>Search for a new movie</button>
         </form>
         <RenderMovieListOMDB
           items={this.state.movies}

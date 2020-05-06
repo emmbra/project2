@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
+import { Header, Icon } from 'semantic-ui-react';
 
 export default class MenuExampleStackable extends Component {
   state = {};
@@ -14,6 +15,13 @@ export default class MenuExampleStackable extends Component {
 
     return (
       <Menu stackable>
+          <Header as='h2'>
+      <Icon name='television' />
+      <Header.Content>
+      An Amazing Movie Rating App
+        <Header.Subheader>What's your preferences</Header.Subheader>
+      </Header.Content>
+    </Header>
         <Menu.Menu position="right">
           <Menu.Item>
             <img
@@ -27,12 +35,12 @@ export default class MenuExampleStackable extends Component {
               active={activeItem === "viewMovies"}
               onClick={this.handleItemClick}
             >
-          <Link to="/viewmovies">
-              View Movies
+          <Link to="/moviesearch">
+              Movie Search
               </Link>
             </Menu.Item>
 
-          <Menu.Item
+          {/* <Menu.Item
             name="rateMovies"
             active={activeItem === "rateMovies"}
             onClick={this.handleItemClick}
@@ -40,7 +48,7 @@ export default class MenuExampleStackable extends Component {
           <Link to="/ratemovies">
             Rate Movies
             </Link>
-          </Menu.Item>
+          </Menu.Item> */}
 
           <Menu.Item
             name="sign-in"

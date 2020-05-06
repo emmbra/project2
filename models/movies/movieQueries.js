@@ -16,6 +16,9 @@ const addMovie = 'INSERT INTO movies (movieTitle, movieYear, movieRating, movieS
 // Updating movie ratings
 const updateMovieRating = 'UPDATE movies SET movieRating = ? WHERE id = ?;';
 
+// Deleting todos
+const deleteMovieById = 'DELETE FROM movies WHERE id = ?;';
+
 module.exports = {
   getAllMovies,
   getMovieById,
@@ -29,4 +32,5 @@ module.exports = {
   getMoviesByRomance,
   addMovie,
   updateMovieRating,
+  deleteMovieById,
 };

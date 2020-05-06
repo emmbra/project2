@@ -40,6 +40,10 @@ router.route('/genre/movieAction')
 router.route('/omdb/:movieTitle')
   .get(movieController.OMDBMovieSearch);
 
+// /api/movies/:id
+router.route('/:id')
+  .delete(movieController.deleteMovieById);
+
 // // /api/movies/:genre
 // router.route('/:genre')
 //   .get(movieController.getMoviesByGenre);
