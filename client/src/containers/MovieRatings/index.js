@@ -64,7 +64,7 @@ class MovieRating extends Component {
       <div>
         <Form>
           <Form.Group widths="equal">
-            <Form.Input fluid label="Username" placeholder="Username" />
+            {/* <Form.Input fluid label="Username" placeholder="Username" /> */}
           </Form.Group>
           <Form.Group inline>
             <label>Movie Rating</label>
@@ -172,9 +172,9 @@ class MovieRating extends Component {
             label="Comments"
             placeholder="Tell us what you thought about the movie."
           />
-          <Form.Button onClick={(e) => this.handleAddMovie(e)}>Submit</Form.Button>
+          {/* <Form.Button onClick={(e) => this.handleAddMovie(e)}>Submit</Form.Button> */}
         </Form>
-        <Button onClick={this.props.history.goBack}>Go to the movie search</Button>
+        {/* <Button onClick={this.props.history.goBack}>Go to the movie search</Button> */}
       
       </div>
     );
