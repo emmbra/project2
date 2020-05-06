@@ -10,6 +10,15 @@ class MovieCard extends Component {
     }
   }
 
+  handleDeleteMovie = async event => {
+    try {
+      await Axios.delete(`/api/movies/${this.props.match.params.id}`);
+      this.props.history.push('/movies');
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   async componentDidMount() {
     // console.log("I'm inside componentDidMount");
     // console.log(this.props);
@@ -31,6 +40,7 @@ class MovieCard extends Component {
         <p>Title: {this.state.movie.movieTitle}</p>
         <p>Year: {this.state.movie.movieYear}</p>
         <p>Rating: {this.state.movie.movieRating}</p>
+        <button onClick={this.handleDeleteMovie}>Delete movie</button>
         <button onClick={this.props.history.goBack}>Go Back</button>
       </div>
     );
