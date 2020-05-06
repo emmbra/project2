@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import {Header, Button, Icon, Segment } from 'semantic-ui-react';
 
 class MovieCard extends Component {
   state = {
@@ -13,7 +14,7 @@ class MovieCard extends Component {
   handleDeleteMovie = async event => {
     try {
       await Axios.delete(`/api/movies/${this.props.match.params.id}`);
-      this.props.history.push('/movies');
+      this.props.history.push('/');
     } catch (error) {
       console.log(error);
     }
@@ -32,16 +33,29 @@ class MovieCard extends Component {
     }
   }
 
-
   render() {
     console.log(this.props);
     return (
       <div>
-        <p>Title: {this.state.movie.movieTitle}</p>
-        <p>Year: {this.state.movie.movieYear}</p>
-        <p>Rating: {this.state.movie.movieRating}</p>
-        <button onClick={this.handleDeleteMovie}>Delete movie</button>
-        <button onClick={this.props.history.goBack}>Go Back</button>
+    <Segment>
+      <Segment.Group>
+      <Header sub>Title: </Header><span>{this.state.movie.movieTitle}</span>
+        <Header sub>Year: </Header><span> {this.state.movie.movieYear}</span>
+        <Header sub> Rating: </Header> <span>{this.state.movie.movieRating}/5</span>
+      </Segment.Group>
+        <Button animated onClick={this.handleDeleteMovie}>
+          <Button.Content visible>Delete movie</Button.Content>
+          <Button.Content hidden>
+          <Icon name='delete' />
+      </Button.Content>
+      </Button>
+        <Button animated onClick={this.props.history.goBack}>
+        <Button.Content visible>Go Back</Button.Content>
+        <Button.Content hidden>
+        <Icon name='backward' />
+      </Button.Content>
+      </Button>
+    </Segment>
       </div>
     );
   }

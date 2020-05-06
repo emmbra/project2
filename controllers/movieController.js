@@ -15,6 +15,16 @@ module.exports = {
     }
   },
 
+  getMovieById: async (req, res) => {
+    const { id } = req.params;
+    try {
+      const [movies] = await connection.query(movieQueries.getMovieById, id);
+      res.status(200).json(movies[0]);
+    } catch (e) {
+      res.status(403).json({ e });
+    }
+  },
+
   getMoviesByTitle: async (req, res) => {
     const { movieTitle } = req.params;
     try {
