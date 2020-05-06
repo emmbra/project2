@@ -6,7 +6,7 @@ import RenderMovieListMoviesDB from '../../components/RenderMovieListMoviesDB';
 class MovieSearchMoviesDB extends Component {
   state = {
     movies: [],
-    movieSearchInput: ''
+    movieInput: ''
   }
 
   // search for a movie by thte title in our database
@@ -31,9 +31,9 @@ class MovieSearchMoviesDB extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     try {
-      const { data } = await axios.post('/api/movies', {text: this.state.movieSearchInput });
+      const { data } = await axios.post('/api/movies', {text: this.state.movieInput });
       const movies = [...this.state.movies, data];
-      this.setState({ movies, movieSearchInput: '' });
+      this.setState({ movies, movieInput: '' });
     } catch (e) {
       console.log(e);
     }
@@ -58,22 +58,23 @@ class MovieSearchMoviesDB extends Component {
   // }
 
   render() {
-    console.log("I rendered inside of Form");
+    console.log("I rendered inside of moviesDB");
     console.log(this.props);
     return (
       <div>
-        <RenderMovieListMoviesDB
-          items={this.state.movies}
-        />
         <form>
           <input
             name="movieInput"
-            value={this.state.movieSearchInput}
-            onChange={this.handleInputChange}
             placeholder="Search for a movie"
+            value={this.state.movieInput}
+            onChange={this.handleInputChange}
           />
           <button onClick={(e) => this.handleSubmit(e)}>What movie would you like to see?</button>
         </form>
+        <RenderMovieListMoviesDB
+          movies={this.state.movies}
+          numberMovies={this.state.movies.length}
+        />
       </div>
     );
   }

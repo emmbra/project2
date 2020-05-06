@@ -4,11 +4,13 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 
 
 const RenderMovieListMoviesDB = props => {
-  const renderMovieListMoviesDB = () => {
-    if (props.items.length === 0) {
+  const renderMovieList = () => {
+    console.log(props.movies);
+    console.log(props.numberMovies);
+    if (props.movies.length === 0) {
       return <PacmanLoader/>;
     } else {
-      return props.items.map(todo => {
+      return props.movies.map(todo => {
         return (
           <div key={todo.id}>
             <Link to={`/todos/${todo.id}`}><li style={{ color: todo.completed ? 'blue' : 'red' }} >{todo.text}</li></Link>
@@ -21,7 +23,7 @@ const RenderMovieListMoviesDB = props => {
   }
   return (
     <ul>
-      { renderMovieListMoviesDB() }
+      { renderMovieList() }
     </ul>
   );
 };
