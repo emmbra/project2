@@ -6,7 +6,7 @@ CREATE TABLE movies (
     movieYear INTEGER,
     movieRating DECIMAL(1, 2),
     movieGenre VARCHAR(50),
-    movieComments VARCHAR(50),
+    -- movieComments VARCHAR(50),
     movieSad BOOLEAN,
     movieFunny BOOLEAN,
     movieAction BOOLEAN,

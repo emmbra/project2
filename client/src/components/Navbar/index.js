@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
-import { Header, Icon } from 'semantic-ui-react';
+import { Header, Icon, Segment } from 'semantic-ui-react';
 
 export default class MenuExampleStackable extends Component {
   state = {};
@@ -14,6 +14,8 @@ export default class MenuExampleStackable extends Component {
     const { activeItem } = this.state;
 
     return (
+      <div id = 'header'>
+          <Segment placeholder>
       <Menu stackable>
           <Header as='h2'>
       <Icon name='television' />
@@ -29,7 +31,6 @@ export default class MenuExampleStackable extends Component {
               alt="Popcorn Comments - Popcorn Icon Png @clipartmax.com"
             ></img>
           </Menu.Item>
-
             <Menu.Item
               name="viewMovies"
               active={activeItem === "viewMovies"}
@@ -39,17 +40,6 @@ export default class MenuExampleStackable extends Component {
               Movie Search
               </Link>
             </Menu.Item>
-
-          {/* <Menu.Item
-            name="rateMovies"
-            active={activeItem === "rateMovies"}
-            onClick={this.handleItemClick}
-          >
-          <Link to="/ratemovies">
-            Rate Movies
-            </Link>
-          </Menu.Item> */}
-
           <Menu.Item
             name="sign-in"
             active={activeItem === "sign-in"}
@@ -59,6 +49,8 @@ export default class MenuExampleStackable extends Component {
           </Menu.Item>
         </Menu.Menu>
       </Menu>
+      </Segment>
+      </div>
     );
   }
 }
