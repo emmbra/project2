@@ -25,7 +25,7 @@ const RenderMovieCard = (props) => {
             <p><strong>Metacritic Rating:</strong> {props.movieRatingMC}</p>
             </span>
 
-            <Link to={`/moviesearch/rating`}>Click here to rate this movie</Link>
+            {/* <Link to={`/moviesearch/rating`}>Click here to rate this movie</Link> */}
         </div>
       );
     }
