@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Icon, Grid, Button } from "semantic-ui-react";
+import { Container, Form, Icon, Grid, Button, Rating, Divider} from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 import Axios from "axios";
 import RenderMovieListMoviesDB from "../../components/RenderMovieListMoviesDB";
@@ -32,12 +32,12 @@ class MovieRating extends Component {
     const { value, name } = event.target;
     this.setState({ [name]: value });
   };
-  
+
   handleAddMovie = async event => {
     event.preventDefault();
     try {
       const movieTitle = this.state.moviesTitle
-      const { data } = await Axios.post('/api/movies', {text: this.state.todoInput });
+      const { data } = await Axios.post('/api/movies', { text: this.state.todoInput });
       console.log(data);
       // created a new array and inserted the new data in it:
       const todos = [...this.state.todos, data];
@@ -62,12 +62,18 @@ class MovieRating extends Component {
     const { value } = this.state;
     return (
       <div>
+      <Container textAlign='center'>
+      <Divider horizontal>Rate the Movie Here</Divider>
         <Form>
           <Form.Group widths="equal">
             <Form.Input fluid label="Username" placeholder="Username" />
           </Form.Group>
           <Form.Group inline>
             <label>Movie Rating</label>
+            <Rating icon='star' defaultRating={3} maxRating={5}
+              onChange={this.handleInputChange}
+            />
+{/* 
             <Form.Radio
               label="1"
               value="1"
@@ -97,7 +103,7 @@ class MovieRating extends Component {
               value="5"
               checked={value === "5"}
               onChange={this.handleInputChange}
-            />
+            /> */}
           </Form.Group>
 
           <Grid columns={2} relaxed="very">
@@ -174,9 +180,9 @@ class MovieRating extends Component {
           />
           <Form.Button onClick={(e) => this.handleAddMovie(e)}>Submit</Form.Button>
         </Form>
-        <Button onClick={this.props.history.goBack}>Go to the movie search</Button>
-      
-      </div>
+        {/* <Button onClick={this.props.history.goBack}>Go to the movie search</Button> */}
+      </Container>
+     </div>
     );
   }
 }

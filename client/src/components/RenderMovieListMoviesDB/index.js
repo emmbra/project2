@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PacmanLoader from "react-spinners/PacmanLoader";
+import { Grid, List } from 'semantic-ui-react';
 
 
 const RenderMovieListMoviesDB = props => {
@@ -13,9 +14,9 @@ const RenderMovieListMoviesDB = props => {
       return props.items.map(movie => {
         return (
           <div key={movie.id}>
-            <Link to={`/movies/${movie.id}`}><li>{movie.movieTitle}</li></Link>
-            {/* <button onClick={ () => props.handleDelete(todo.id) }>Delete</button>
-            <button onClick={ () => props.handleUpdateCompletedTodo(todo.id) }>Update</button> */}
+            <List divided verticalAlign='middle'>
+              <Link to={`/movies/${movie.id}`}><li>{movie.movieTitle}</li></Link>
+            </List>
           </div>
         )
       });
@@ -23,7 +24,7 @@ const RenderMovieListMoviesDB = props => {
   }
   return (
     <ul>
-      { renderMovieListMoviesDB() }
+      {renderMovieListMoviesDB()}
     </ul>
   );
 };

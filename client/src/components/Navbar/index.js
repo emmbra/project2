@@ -15,13 +15,13 @@ export default class MenuExampleStackable extends Component {
 
     return (
       <Menu stackable>
-          <Header as='h2'>
-      <Icon name='television' />
-      <Header.Content>
-      Marvelous Movies
+        <Header as='h2'>
+          <Icon name='television' />
+          <Header.Content>
+            Marvelous Movies
         <Header.Subheader>Movies</Header.Subheader>
-      </Header.Content>
-    </Header>
+          </Header.Content>
+        </Header>
         <Menu.Menu position="right">
           <Menu.Item>
             <img
@@ -30,15 +30,15 @@ export default class MenuExampleStackable extends Component {
             ></img>
           </Menu.Item>
 
-            <Menu.Item
-              name="viewMovies"
-              active={activeItem === "viewMovies"}
-              onClick={this.handleItemClick}
-            >
-          <Link to="/moviesearch">
+          <Menu.Item
+            name="viewMovies"
+            active={activeItem === "viewMovies"}
+            onClick={this.handleItemClick}
+          >
+            <Link to="/moviesearch">
               Movie Search
               </Link>
-            </Menu.Item>
+          </Menu.Item>
 
           {/* <Menu.Item
             name="rateMovies"
