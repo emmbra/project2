@@ -44,6 +44,7 @@ router.route('/omdb/:movieTitle')
 // /api/movies/:id
 router.route('/:id')
   .get(movieController.getMovieById)
+  .patch(movieController.updateMovieRateById)
   .delete(movieController.deleteMovieById);
 
 // // /api/movies/:genre

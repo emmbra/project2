@@ -147,22 +147,19 @@ module.exports = {
     }
   },
 
-  //   updateMovieRating: async (req, res) => {
-  //     const { movieRating } = req.body;
-  //     if (!movieRating) {
-  //       return res.json({ error: 'You must provide a rating for the movie ' });
-  //     }
-  //     try {
-  // // 'UPDATE movies SET movieRating = ? WHERE id = ?;';
-  //       const [response] = await connection.query(movieQueries.updateMovieRating, { movieRating });
-  //       const [movies] = await connection.query(movieQueries.getMovieById, response.insertId);
-  //       return res.json(movies[0]);
-  //     } catch (e) {
-  //       return res.status(403).json({ e });
-  //     }
-  //   },
-
-  // updateMovieRating: async (req, res) => {
-  // },
+  updateMovieRateById: async (req, res) => {
+    const { id } = req.params;
+    const { movieRating } = req.body;
+    if (!movieRating) {
+      return res.json({ error: 'You must provide a rating for the movie ' });
+    }
+    try {
+      await connection.query(movieQueries.updateMovieRating, [movieRating, id]);
+      const [movies] = await connection.query(movieQueries.getMovieById, id);
+      res.json(movies[0]);
+    } catch (e) {
+      res.status(403).json({ e });
+    }
+  },
 
 };
