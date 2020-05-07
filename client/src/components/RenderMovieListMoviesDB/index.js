@@ -1,30 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import PacmanLoader from "react-spinners/PacmanLoader";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-
-const RenderMovieListMoviesDB = props => {
-
-  const renderMovieListMoviesDB = () => {
-    if (props.items.length === 0) {
-      return '';
+class RenderMovieListMoviesDB extends Component {
+  renderMovieList = () => {
+    if (this.props.items.length === 0) {
+      return "";
     } else {
-      console.log(props);
-      return props.items.map(movie => {
+      console.log(this.props);
+      return this.props.items.map((movie) => {
         return (
-          <div key={movie.id}>
-            <Link to={`/movies/${movie.id}`}><li>{movie.movieTitle}</li></Link>
-            {/* <button onClick={ () => props.handleDelete(todo.id) }>Delete</button>
-            <button onClick={ () => props.handleUpdateCompletedTodo(todo.id) }>Update</button> */}
+          <div key={movie.id} id="main-list">
+            <Link to={`/movies/${movie.id}`}>{movie.movieTitle}</Link>
           </div>
-        )
+        );
       });
     }
+  };
+
+  componentDidMount() {
+    this.props.getAllMovies();
   }
-  return (
-    <ul>
-      { renderMovieListMoviesDB() }
-    </ul>
-  );
-};
+
+  render() {
+    return (
+      <ul>
+        {this.renderMovieList()}
+      </ul>
+    );
+  }
+}
+
 export default RenderMovieListMoviesDB;

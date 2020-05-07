@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   Container,
   Form,
@@ -12,9 +12,8 @@ import { withRouter } from "react-router-dom";
 
 const RenderMovieRatingForm = (props) => {
   const renderMovieRatingForm = () => {
-    const { value } = this.state.value;
     return (
-      <div>
+      <div class = 'body-content'>
         <Container textAlign="center">
           <Divider horizontal>Rate the Movie Here</Divider>
           <Form>
@@ -24,119 +23,27 @@ const RenderMovieRatingForm = (props) => {
             <Form.Group inline>
               <label>Movie Rating</label>
               <Rating
+                name="movieRating"
                 icon="star"
                 defaultRating={3}
                 maxRating={5}
-                onChange={this.handleInputChange}
-              />
-              <Form.Radio
-                label="1"
-                value="1"
-                checked={value === "1"}
-                onChange={this.handleInputChange}
-              />
-              <Form.Radio
-                label="2"
-                value="2"
-                checked={value === "2"}
-                onChange={this.handleInputChange}
-              />
-              <Form.Radio
-                label="3"
-                value="3"
-                checked={value === "3"}
-                onChange={this.handleInputChange}
-              />
-              <Form.Radio
-                label="4"
-                value="4"
-                checked={value === "4"}
-                onChange={this.handleInputChange}
-              />
-              <Form.Radio
-                label="5"
-                value="5"
-                checked={value === "5"}
-                onChange={this.handleInputChange}
+                onRate={props.handleRating}
               />
             </Form.Group>
-
-            <Grid columns={2} relaxed="very">
-              <Grid.Column>
                 <Form.Group inline>
-                  <label>Sad</label>
-                  <Form.Radio
-                    label=<Icon link name="thumbs up" />
-                    value="yes"
-                    checked={value === "yes"}
-                    onChange={this.handleInputChange}
-                  />
-                  <Form.Radio
-                    label=<Icon link name="thumbs down" />
-                    value="no"
-                    checked={value === "no"}
-                    onChange={this.handleInputChange}
-                  />
+                  <Form.Field name="movieSad" checked={props.movieSad} label='Sad' control='input' type='checkbox' onChange={props.handleCheckbox}/>
+                  <Form.Field name="movieFunny" checked={props.movieFunny} label='Funny' control='input' type='checkbox' onChange={props.handleCheckbox}/>
+                  <Form.Field name="movieAction" checked={props.movieAction} label='Action' control='input' type='checkbox' onChange={props.handleCheckbox}/>
+                  <Form.Field name="movieRomance" checked={props.movieRomance} label='Romance' control='input' type='checkbox' onChange={props.handleCheckbox}/>
                 </Form.Group>
-
-                <Form.Group inline>
-                  <label>Funny</label>
-                  <Form.Radio
-                    label=<Icon link name="thumbs up" />
-                    value="yes"
-                    checked={value === "yes"}
-                    onChange={this.handleInputChange}
-                  />
-                  <Form.Radio
-                    label=<Icon link name="thumbs down" />
-                    value="no"
-                    checked={value === "no"}
-                    onChange={this.handleInputChange}
-                  />
-                </Form.Group>
-              </Grid.Column>
-              <Grid.Column>
-                <Form.Group inline>
-                  <label>Romance</label>
-                  <Form.Radio
-                    label=<Icon link name="thumbs up" />
-                    value="yes"
-                    checked={value === "yes"}
-                    onChange={this.handleInputChange}
-                  />
-                  <Form.Radio
-                    label=<Icon link name="thumbs down" />
-                    value="no"
-                    checked={value === "no"}
-                    onChange={this.handleInputChange}
-                  />
-                </Form.Group>
-              </Grid.Column>
-              <Grid.Column>
-                <Form.Group inline>
-                  <label>Action</label>
-                  <Form.Radio
-                    label=<Icon link name="thumbs up" />
-                    value="yes"
-                    checked={value === "yes"}
-                    onChange={this.handleInputChange}
-                  />
-                  <Form.Radio
-                    label=<Icon link name="thumbs down" />
-                    value="no"
-                    checked={value === "no"}
-                    onChange={this.handleInputChange}
-                  />
-                </Form.Group>
-              </Grid.Column>
-            </Grid>
-            <Form.TextArea
+ 
+            {/* <Form.TextArea
               label="Comments"
               placeholder="Tell us what you thought about the movie."
-            />
-            {/* <Form.Button onClick={(e) => this.handleAddMovie(e)}>Submit</Form.Button> */}
+            /> */}
+            <Form.Button onClick={ props.handleAddMovie }>Submit</Form.Button>
           </Form>
-          {/* <Button onClick={this.props.history.goBack}>Go to the movie search</Button> */}
+          {/* <Button onClick={props.history.goBack}>Go to the movie search</Button> */}
         </Container>
       </div>
     );

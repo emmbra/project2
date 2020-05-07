@@ -1,0 +1,29 @@
+body{
+  background-color:lightblue;
+  width: 100%;
+  margin: auto;
+}
+
+#header{
+  width: 100%;
+  
+}
+
+#main-list{
+  background-color:white;
+  width:80%;
+  margin: auto;
+  padding:10px;
+}
+
+
+.body-content{
+  background-color:white;
+  width:80%;
+  margin: auto;
+  padding:10px;
+}
+
+#search-bar{
+  right:20%;
+}
