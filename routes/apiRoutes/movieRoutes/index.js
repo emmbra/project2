@@ -1,6 +1,7 @@
 const router = require('express').Router();
-// /api/movies prepended to every route inside of here
 const movieController = require('../../../controllers/movieController');
+
+// /api/movies prepended to every route inside of here
 
 // /api/movies
 router.route('/')
@@ -44,6 +45,7 @@ router.route('/omdb/:movieTitle')
 // /api/movies/:id
 router.route('/:id')
   .get(movieController.getMovieById)
+  .patch(movieController.updateMovieRateById)
   .delete(movieController.deleteMovieById);
 
 // // /api/movies/:genre
@@ -52,7 +54,5 @@ router.route('/:id')
 
 // router.route('/:movieTitle/:movieYear/:movieGenre')
 //   .get(movieController.)
-
-//   google ? variables for making our own api
 
 module.exports = router;

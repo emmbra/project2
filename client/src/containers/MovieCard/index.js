@@ -21,9 +21,6 @@ class MovieCard extends Component {
   }
 
   async componentDidMount() {
-    // console.log("I'm inside componentDidMount");
-    // console.log(this.props);
-    // console.log(this.props.match.params.id);
     try {
       const id = this.props.match.params.id;
       const { data } = await Axios.get(`/api/movies/${id}`);
