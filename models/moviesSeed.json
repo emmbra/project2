@@ -3,410 +3,492 @@
     "movieTitle": "Once Upon a Time... in Hollywood",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "crazy twist!",
     "movieSad": 1,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg",
+    "movieCommenter": "Joe"
   },
   {
     "movieTitle": "Star Wars: Episode IX - The Rise of Skywalker",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Not enough Luke Skywalker",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg",
+    "movieCommenter": "Luke Skywalker"
   },
   {
     "movieTitle": "Avengers: Endgame",
     "movieYear": 2019,
     "movieRating": 5,
-    "movieComments": "",
+    "movieComments": "The heroes we deserved.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
+    "movieCommenter": "Tony Stark"
   },
   {
     "movieTitle": "Bad Boys for Life",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "What ya gonna do when they come for you?",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "movieCommenter": "Will Smith"
   },
   {
     "movieTitle": "Trolls World Tour",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "I've seen better.",
     "movieSad": 0,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjIwNjg1NmUtMGE5Yi00YmQxLTg0M2QtMGQyNDVlZWUwOGUwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "movieCommenter": "Shrek"
   },
   {
     "movieTitle": "Joker",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "That Joker guy was pretty good.",
     "movieSad": 1,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "movieCommenter": "Heath Ledger"
   },
   {
     "movieTitle": "Bloodshot",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "good movie",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://images-na.ssl-images-amazon.com/images/I/51erHVFmwOL._AC_.jpg",
+    "movieCommenter": "Vin Diesel"
   },
   {
     "movieTitle": "The Godfather",
     "movieYear": 1972,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Looking forward to my daughter's wedding",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "movieCommenter": "Mr. Corleone"
   },
   {
     "movieTitle": "Jojo Rabbit",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Would recommend to a friend.",
     "movieSad": 0,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BZjU0Yzk2MzEtMjAzYy00MzY0LTg2YmItM2RkNzdkY2ZhN2JkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
+    "movieCommenter": "Johnny Boy"
   },
   {
     "movieTitle": "Onward",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Squeaky squeaky",
     "movieSad": 1,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMTZlYzk3NzQtMmViYS00YWZmLTk5ZTEtNWE0NGVjM2MzYWU1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
+    "movieCommenter": "Pixar Lamp"
   },
   {
     "movieTitle": "Fantasy Island",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "The island knows your secrets!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BOWE2ODZhYWYtNTFiYy00MjdmLWIzZGEtNTkyOTc1NDIwMjk4XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg",
+    "movieCommenter": "Jane"
   },
   {
     "movieTitle": "Jumanji: The Next Level",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "The original was better",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BOTVjMmFiMDUtOWQ4My00YzhmLWE3MzEtODM1NDFjMWEwZTRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "movieCommenter": "Robin Williams"
   },
   {
     "movieTitle": "Sonic the Hedgehog",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "So fast!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDk5Yzc4NzMtODUwOS00NTdhLTg2MjEtZTkzZjc0ZWE2MzAwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg",
+    "movieCommenter": "Speed Racer"
   },
   {
     "movieTitle": "The Irishman",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Thought it was alright.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg",
+    "movieCommenter": "Scorcese"
   },
   {
     "movieTitle": "Dolittle",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Can I put these animals in iron suits?",
     "movieSad": 1,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+    "movieCommenter": "Robert Downey Jr."
   },
   {
     "movieTitle": "Men in Black: International",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Forgot what I was going to say",
     "movieSad": 0,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDZkODI2ZGItYTY5Yi00MTA4LWExY2ItM2ZmNjczYjM0NDg1XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg",
+    "movieCommenter": "Agent Smith"
   },
   {
     "movieTitle": "Pulp Fiction",
     "movieYear": 1994,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Say what one more time!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "movieCommenter": "Samuel L. Jackson"
   },
   {
     "movieTitle": "Harry Potter and the Sorcerer's Stone",
     "movieYear": 2001,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Too much screen time for Harry Potter.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+    "movieCommenter": "Ron Weasley"
   },
   {
     "movieTitle": "Life of Pi",
     "movieYear": 2012,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Grrrreat!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_SX300.jpg",
+    "movieCommenter": "Tony the Tiger"
   },
   {
     "movieTitle": "Tenet",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Mind bender of a movie.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://images-na.ssl-images-amazon.com/images/I/51Zqxc%2Bk90L._AC_.jpg",
+    "movieCommenter": "Jerry"
   },
   {
     "movieTitle": "Avengers: Infinity War",
     "movieYear": 2018,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "That Thanos guy had a point.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg",
+    "movieCommenter": "Dr. Doom"
   },
   {
     "movieTitle": "The Lord of the Rings: The Fellowship of the Ring",
     "movieYear": 2001,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Grow a pair Samwise.",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://images-na.ssl-images-amazon.com/images/I/81EBp0vOZZL._AC_SL1329_.jpg",
+    "movieCommenter": "Gandalf"
   },
   {
     "movieTitle": "Thor: Ragnarok",
     "movieYear": 2017,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "You call that a hammer?",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg",
+    "movieCommenter": "Tim the Tool Man Taylor"
   },
   {
     "movieTitle": "The Lion King",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Everything the light touches is yours.",
     "movieSad": 1,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg",
+    "movieCommenter": "Mufasa"
   },
   {
     "movieTitle": "Mulan",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Be a man!",
     "movieSad": 1,
     "movieFunny": 1,
     "movieAction": 1,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BODkxNGQ1NWYtNzg0Ny00Yjg3LThmZTItMjE2YjhmZTQ0ODY5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "movieCommenter": "Mulan"
   },
   {
     "movieTitle": "Suicide Squad",
     "movieYear": 2016,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Batter up!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_SX300.jpg",
+    "movieCommenter": "Joker"
   },
   {
     "movieTitle": "Blade Runner 2049",
     "movieYear": 2017,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "So many cylons!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg",
+    "movieCommenter": "Commander Adama"
   },
   {
     "movieTitle": "Guardians of the Galaxy",
     "movieYear": 2014,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "That racoon was so cute",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_SX300.jpg",
+    "movieCommenter": "Rocket"
   },
   {
     "movieTitle": "Angel Has Fallen",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "The hero becomes the fugitive!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg",
+    "movieCommenter": "Gerard Butler"
   },
   {
     "movieTitle": "Gladiator",
     "movieYear": 2000,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Are you not entertained",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "movieCommenter": "Russell Crowe"
   },
   {
     "movieTitle": "The Matrix",
     "movieYear": 1999,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "I took the blue pill",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "movieCommenter": "Morpheus"
   },
   {
     "movieTitle": "Frozen II",
     "movieYear": 2019,
     "movieRating": 5,
-    "movieComments": "",
+    "movieComments": "Snowman needed more screen time.",
     "movieSad": 0,
     "movieFunny": 1,
     "movieAction": 0,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
+    "movieCommenter": "Olaf"
   },
   {
     "movieTitle": "Titanic",
     "movieYear": 1997,
     "movieRating": 5,
-    "movieComments": "",
+    "movieComments": "My heart will go on.",
     "movieSad": 1,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+    "movieCommenter": "Rose"
   },
   {
     "movieTitle": "Black Widow",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "What a superhero!",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BN2EyMDIyYWItNWI0MC00ODZmLWJlYTAtNDhmOTU0YWZmNWJlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg",
+    "movieCommenter": "Scarlet"
   },
   {
     "movieTitle": "Spider-Man: Far from Home",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Peter Parker is so dreamy",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+    "movieCommenter": "Mary Jane"
   },
   {
     "movieTitle": "Wonder Woman 1984",
     "movieYear": 2020,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Amazon Pride",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNDFmZjgyMTEtYTk5MC00NmY0LWJhZjktOWY2MzI5YjkzODNlXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SX300.jpg",
+    "movieCommenter": "Gal Gadot"
   },
   {
     "movieTitle": "Jurassic World",
     "movieYear": 2015,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "velociraptor isn't that scary",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BNzQ3OTY4NjAtNzM5OS00N2ZhLWJlOWUtYzYwZjNmOWRiMzcyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    "movieCommenter": "T-Rex"
   },
   {
     "movieTitle": "Jurassic Park",
     "movieYear": 1993,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "T-Rex isn't that scary",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg",
+    "movieCommenter": "Velociraptor"
   },
   {
     "movieTitle": "Fight Club",
     "movieYear": 1999,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "The first rule of Fight Club...",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "movieCommenter": "Edward Norton"
   },
   {
     "movieTitle": "Se7en",
     "movieYear": 1995,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "What's in the box?",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 1,
-    "movieRomance": 0
+    "movieRomance": 0,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "movieCommenter": "Brad Pitt"
   },
   {
     "movieTitle": "Yesterday",
     "movieYear": 2019,
     "movieRating": 4,
-    "movieComments": "",
+    "movieComments": "Better than Tomorrow",
     "movieSad": 0,
     "movieFunny": 0,
     "movieAction": 0,
-    "movieRomance": 1
+    "movieRomance": 1,
+    "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjQ0NTI0NjkyN15BMl5BanBnXkFtZTgwNzY0MTE0NzM@._V1_SX300.jpg",
+    "movieCommenter": "John Lennon"
   }
 ]
