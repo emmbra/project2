@@ -4,6 +4,7 @@ import Axios from "axios";
 import RenderMovieListMoviesDB from "../../components/RenderMovieListMoviesDB";
 import RenderOMDBMovieCard from "../../components/RenderOMDBMovieCard";
 import RenderMovieRatingForm from "../../components/RenderMovieRatingForm";
+import RenderMoviesRated from "../../components/RenderMoviesRated";
 import Wrapper from "../../components/Wrapper";
 
 class MovieSearchOMDB extends Component {
@@ -146,7 +147,14 @@ class MovieSearchOMDB extends Component {
             />
           </Wrapper>
         );
-
+        case 2:
+          return (
+            <RenderMoviesRated
+              items={this.state.movies}
+              getAllMovies={this.getAllMovies}
+              handleDeleteMovie={this.handleDeleteMovie}
+            />
+          );
       default:
         break;
     }

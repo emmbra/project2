@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Card, Image } from 'semantic-ui-react'
 
 class RenderMovieListMoviesDB extends Component {
   renderMovieList = () => {
@@ -9,6 +10,7 @@ class RenderMovieListMoviesDB extends Component {
       console.log(this.props);
       return this.props.items.map((movie) => {
         return (
+
           <div key={movie.id} id="main-list">
             {/* build a card component for these that takes the props */}
             <Link to={`/movies/${movie.id}`}>{movie.movieTitle}
@@ -16,6 +18,7 @@ class RenderMovieListMoviesDB extends Component {
             </Link>
             {movie.movieCommenter}: {movie.movieComments}
           </div>
+
         );
       });
     }
@@ -26,11 +29,7 @@ class RenderMovieListMoviesDB extends Component {
   }
 
   render() {
-    return (
-      <ul>
-        {this.renderMovieList()}
-      </ul>
-    );
+    return <ul>{this.renderMovieList()}</ul>;
   }
 }
 
