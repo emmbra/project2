@@ -33,8 +33,8 @@ function SingleMovieCard(props) {
   return (
     // <Grid relaxed columns={4}>
     //   <Grid.Column>
-    // <Popup
-    //   trigger={
+    <Popup
+      trigger={
     <Card>
       <div className="moviePoster">
         <img
@@ -59,23 +59,22 @@ function SingleMovieCard(props) {
         {props.movie.movieCommenter} says: "{props.movie.movieComments}"
       </Card.Content>
     </Card>
-    //   }
-    // >
-    //   <Popup.Header>User Rating</Popup.Header>
-    //   <Popup.Content>
-    //     <Rating
-    //       icon="star"
-    //       defaultRating={props.movie.movieRating}
-    //       maxRating={5}
-    //     />
-    //     {props.movie.movieSad}
-    //     {props.movie.movieFunny}
-
-    //     {props.movie.movieRomance}
-    //     {props.movie.movieAction}
-    //     <div>{popUpGenerator()}</div>
-    //   </Popup.Content>
-    // </Popup>
+      }
+    >
+      <Popup.Header>User Rating</Popup.Header>
+      <Popup.Content>
+        <Rating
+          icon="star"
+          defaultRating={props.movie.movieRating}
+          maxRating={5}
+        />
+        {props.movie.movieSad}
+        {props.movie.movieFunny}
+        {props.movie.movieRomance}
+        {props.movie.movieAction}
+        <div>{popUpGenerator()}</div>
+      </Popup.Content>
+    </Popup>
     //   </Grid.Column>
     // </Grid>
   );

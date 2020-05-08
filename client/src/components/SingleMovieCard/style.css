@@ -35,6 +35,18 @@
   background-image: url("./images/sad.svg");
 }
 
+.funny{
+  background-image: url("./images/funny.svg");
+}
+
+.action{
+  background-image: url("./images/action.svg");
+}
+
+.romance{
+  background-image: url("./images/romance.svg");
+}
+
 
  /* body{
   background-color:lightblue;
