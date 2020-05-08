@@ -17,7 +17,7 @@ body{
 }
 
 #home-page {
-  background-image: url("../src/images/laptop-movie-theater.jpg");
+  background-image: url("./images/laptop-movie-theater.jpg");
   width: 100%;
   opacity: 80%;
   height: 350px;

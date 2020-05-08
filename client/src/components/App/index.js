@@ -10,6 +10,7 @@ import '../../../src/style.css';
 const App = () => (
     <Router>
       <Navbar/>
+      <HomePage/>
       <Route exact path='/' component={MovieSearch}/>
       <Route exact path='/movies/:id' component={MovieCard}/>
       <Route exact path='/movieratings' component={RenderMovieRatingForm}/>
