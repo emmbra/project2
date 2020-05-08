@@ -5,8 +5,8 @@ import { Divider, Image, Grid } from "semantic-ui-react";
 
 const RenderMovieCard = (props) => {
   const renderMovieCard = () => {
-    if (props.items.length === 0) {
-      // return <PacmanLoader/>;
+    if (!props.items) {
+      return ""
     } else {
       return (
         <div>
