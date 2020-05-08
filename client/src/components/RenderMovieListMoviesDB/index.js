@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 
 class RenderMovieListMoviesDB extends Component {
   renderMovieList = () => {
-    if (this.props.items.length === 0) {
+    if (!this.props.items.length) {
       return "";
     } else {
       console.log(this.props);
       return this.props.items.map((movie) => {
         return (
           <div key={movie.id} id="main-list">
-            <Link to={`/movies/${movie.id}`}>{movie.movieTitle}</Link>
+            {/* build a card component for these that takes the props */}
+            <Link to={`/movies/${movie.id}`}>{movie.movieTitle}
+            <img src={movie.moviePoster} alt={movie.movieTitle}/>
+            </Link>
+            {movie.movieCommenter}: {movie.movieComments}
           </div>
         );
       });
