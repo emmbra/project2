@@ -1,4 +1,13 @@
-/* body{
+
+
+.ui.cards{
+width:30%;
+
+}
+
+
+
+ /* body{
   background-color:lightblue;
   width: 100%;
   margin: auto;
@@ -17,7 +26,6 @@
 }
 
 #home-page {
-  background-image: url("./images/laptop-movie-theater.jpg");
   width: 100%;
   opacity: 80%;
   height: 350px;
@@ -81,4 +89,4 @@ box-shadow: 0px 5px 10px 2px #5d5d5dab;
 .ui.segments {
   border: none;
   box-shadow: none;
-} */
+} */ 

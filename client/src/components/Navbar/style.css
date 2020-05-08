@@ -1,0 +1,11 @@
+#header {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+.ui.menu {
+  background: #fff;
+  font-weight: 400;
+  border: none;
+  box-shadow: none;
+}

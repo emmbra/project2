@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PacmanLoader from "react-spinners/PacmanLoader";
-import { Divider, Image, Grid } from "semantic-ui-react";
+import { Image, Grid } from "semantic-ui-react";
+import "./style.css";
 
 const RenderMovieCard = (props) => {
   const renderMovieCard = () => {
@@ -10,7 +10,7 @@ const RenderMovieCard = (props) => {
     } else {
       return (
         <div>
-          <Grid class = 'body-content'>
+          <Grid className = 'body-content'>
             <Grid.Column width={4}>
               <Link to={`/movies/${props.items}`}></Link>
               <Image size="medium" src={props.moviePoster} floated="left" />

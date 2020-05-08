@@ -36,6 +36,7 @@ class MovieCard extends Component {
       <div>
     <Segment>
       <Segment.Group>
+      <span><img src={this.state.movie.moviePoster} alt={this.state.movie.movieTitle}></img></span>
       <Header sub>Title: </Header><span>{this.state.movie.movieTitle}</span>
         <Header sub>Year: </Header><span> {this.state.movie.movieYear}</span>
         <Header sub> Rating: </Header> <span>{this.state.movie.movieRating}/5</span>
