@@ -1,4 +1,4 @@
-/* body{
+body{
   background-color:lightblue;
   width: 100%;
   margin: auto;
@@ -15,9 +15,8 @@
   border: none;
   box-shadow: none;
 }
-
+/* 
 #home-page {
-  background-image: url("./images/laptop-movie-theater.jpg");
   width: 100%;
   opacity: 80%;
   height: 350px;
@@ -36,7 +35,7 @@
   border-radius: 20px;
   vertical-align: middle;
   height:300px;
-}
+} */
 .ui.text.container {
   max-width: 250px !important;
 }
@@ -64,14 +63,14 @@ p{
   font-size:13px;
 }
 
-.wrapper{
+/* .wrapper{
   background-color: #fff;
   width:80%;
 margin-right:10%;
 margin-left:10%;
 border-radius: 5px;
 box-shadow: 0px 5px 10px 2px #5d5d5dab;
-}
+} */
 
 .movie-card {
   width:60%;
@@ -81,4 +80,4 @@ box-shadow: 0px 5px 10px 2px #5d5d5dab;
 .ui.segments {
   border: none;
   box-shadow: none;
-} */
+}

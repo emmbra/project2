@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import { withRouter, Route } from "react-router-dom";
 import Axios from "axios";
 import RenderMovieListMoviesDB from "../../components/RenderMovieListMoviesDB";
 import RenderOMDBMovieCard from "../../components/RenderOMDBMovieCard";
 import RenderMovieRatingForm from "../../components/RenderMovieRatingForm";
-import RenderMoviesRated from "../../components/RenderMoviesRated";
 import Wrapper from "../../components/Wrapper";
+import { Container, Header, Segment, Button, Input, Divider } from "semantic-ui-react";
+import "./style.css";
 
 class MovieSearchOMDB extends Component {
   state = {
     movies: [],
     movieInput: "",
     movie: {},
-    section: 0,
+    section: 2,
     movieRating: 3,
     movieSad: false,
     movieAction: false,
@@ -74,7 +74,7 @@ class MovieSearchOMDB extends Component {
     event.preventDefault();
     try {
       const movieTitle = this.state.movieInput;
-      const { data } = await Axios.get(`/api/movies/title/${movieTitle}`);
+      await Axios.get(`/api/movies/title/${movieTitle}`);
       // const movies = [...this.state.movies, data];
       // this.setState({ movie:, movieInput: '' });
     } catch (e) {
@@ -110,7 +110,7 @@ class MovieSearchOMDB extends Component {
           <RenderMovieListMoviesDB
             items={this.state.movies}
             getAllMovies={this.getAllMovies}
-            handleDeleteMovie={this.handleDeleteMovie}
+            // handleDeleteMovie={this.handleDeleteMovie}
           />
         );
       case 1:
@@ -125,9 +125,21 @@ class MovieSearchOMDB extends Component {
               moviePlot={this.state.movie.Plot}
               movieRated={this.state.movie.Rated}
               movieGenre={this.state.movie.Genre}
-              movieRatingIMDB={this.state.movie["Ratings"] ? this.state.movie["Ratings"][0].Value : "N/A"}
-              movieRatingRT={this.state.movie["Ratings"] ? this.state.movie["Ratings"][1].Value : "N/A"}
-              movieRatingMC={this.state.movie["Ratings"] ? this.state.movie["Ratings"][2].Value : "N/A"}
+              movieRatingIMDB={
+                this.state.movie["Ratings"]
+                  ? this.state.movie["Ratings"][0].Value
+                  : "N/A"
+              }
+              movieRatingRT={
+                this.state.movie["Ratings"]
+                  ? this.state.movie["Ratings"][1].Value
+                  : "N/A"
+              }
+              movieRatingMC={
+                this.state.movie["Ratings"]
+                  ? this.state.movie["Ratings"][2].Value
+                  : "N/A"
+              }
             />
             <RenderMovieRatingForm
               handleAddMovie={this.handleAddMovie}
@@ -137,7 +149,7 @@ class MovieSearchOMDB extends Component {
               // value={this.state.value}
               movieTitle={this.state.movieTitle}
               movieYear={this.state.movieYear}
-              movieRating={this.state.movieYear}
+              movieRating={this.state.movieRating}
               movieSad={this.state.movieSad}
               movieFunny={this.state.movieFunny}
               movieRomance={this.state.movieRomance}
@@ -149,11 +161,7 @@ class MovieSearchOMDB extends Component {
         );
         case 2:
           return (
-            <RenderMoviesRated
-              items={this.state.movies}
-              getAllMovies={this.getAllMovies}
-              handleDeleteMovie={this.handleDeleteMovie}
-            />
+            <div></div>
           );
       default:
         break;
@@ -162,21 +170,51 @@ class MovieSearchOMDB extends Component {
 
   render() {
     return (
-      <div class="body-content" id="search-bar">
-        <form onSubmit={(e) => this.handleSubmitOMDB(e)}>
-          <input
-            name="movieInput"
-            placeholder="Enter a movie title..."
-            value={this.state.movieInput}
-            onChange={this.handleInputChange}
-          />
-          <button onClick={(e) => this.handleSubmitOMDB(e)}>
-            Search for a new movie to rate
-          </button>
-          {/* <button onClick={(e) => this.handleSubmitMoviesDB(e)}>
-            Search rated movies
-          </button> */}
-        </form>
+      <div>
+        <div id="home-page">
+          <Segment floated="left" vertical>
+            <Container id="home-page-items">
+              <Container text>
+                <Header
+                  as="h4"
+                  content="Find the right movie to watch!"
+                  inverted
+                  style={{
+                    fontWeight: "normal",
+                    marginBottom: 0,
+                  }}
+                />
+                <Header
+                  as="h5"
+                  content="See movie ratings from IMDB, Rotten Tomatoes, and Metacritic. Then add your own Fresh Lemon rating!"
+                  inverted
+                  style={{
+                    fontWeight: "normal",
+                    width: "250px!important",
+                  }}
+                />
+                <br/>
+              </Container>
+              <form onSubmit={(e) => this.handleSubmitOMDB(e)}>
+                <Input
+                  size="mini"
+                  name="movieInput"
+                  placeholder="Enter a movie title..."
+                  value={this.state.movieInput}
+                  onChange={this.handleInputChange}
+                />
+                <Divider hidden />
+                <Button
+                  primary
+                  size="mini"
+                  onClick={(e) => this.handleSubmitOMDB(e)}
+                >
+                  Search for a movie to rate
+                </Button>
+              </form>
+            </Container>
+          </Segment>
+        </div>
         <div>{this.renderMain()}</div>
       </div>
     );

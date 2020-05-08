@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Container,
   Form,
-  Icon,
-  Grid,
-  Button,
   Rating,
   Divider,
 } from "semantic-ui-react";
-import { withRouter } from "react-router-dom";
+import "./style.css";
 
 const RenderMovieRatingForm = (props) => {
   const renderMovieRatingForm = () => {
