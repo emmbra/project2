@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Axios from 'axios';
 import SingleMovieCard from "../SingleMovieCard";
 import "./style.css";
-
+import { Card} from "semantic-ui-react";
 
 class MovieListPage extends Component {
   state = {
@@ -26,9 +26,13 @@ class MovieListPage extends Component {
     if (!this.state.movies.length) {
       return "";
     } else {
-      return this.state.movies.map((movie, index) => {
-        return <SingleMovieCard key={index} movie={movie}/>
-      });
+      return (
+        <div className="cardContainer">
+          <Card.Group>
+            {this.state.movies.map((movie, index) => <SingleMovieCard key={index} movie={movie} />)}
+          </Card.Group>
+        </div>
+      );
     }
   }
 }

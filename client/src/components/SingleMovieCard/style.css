@@ -1,10 +1,51 @@
-
-
-.ui.cards{
-width:30%;
-
+.ui.card{
+  min-height: 600px;
+  max-height: 600px;
+  max-width: 290px;
+  padding: 1%;
+  /* font-size: medium; */
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border: 1px solid rgba(34,36,38,.15);
+  display: inline-flex;
+  margin: 1.5em .5em;
+  /* margin-right: 5px; */
 }
 
+.moviePoster{
+  min-height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  -ms-flex-align: center;
+  padding: 10px;
+}
+
+.movieImage{
+  width: 100%;
+  /* max-width: 100px; */
+  /* padding: 5px; */
+  /* width: 100%; */
+  /* object-fit: contain; */
+  /* margin: auto; */
+}
+
+
+.sad{
+  background-image: url("./images/sad.svg");
+}
+
+.funny{
+  background-image: url("./images/funny.svg");
+}
+
+.action{
+  background-image: url("./images/action.svg");
+}
+
+.romance{
+  background-image: url("./images/romance.svg");
+}
 
 
  /* body{
