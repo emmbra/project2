@@ -4,6 +4,7 @@ import Axios from "axios";
 import RenderMovieListMoviesDB from "../../components/RenderMovieListMoviesDB";
 import RenderOMDBMovieCard from "../../components/RenderOMDBMovieCard";
 import RenderMovieRatingForm from "../../components/RenderMovieRatingForm";
+import RenderMoviesRated from "../../components/RenderMoviesRated";
 import Wrapper from "../../components/Wrapper";
 
 class MovieSearchOMDB extends Component {
@@ -17,6 +18,8 @@ class MovieSearchOMDB extends Component {
     movieAction: false,
     movieFunny: false,
     movieRomance: false,
+    movieCommenter: "",
+    movieComments: "",
   };
 
   async componentDidMount() {
@@ -31,7 +34,7 @@ class MovieSearchOMDB extends Component {
     } catch (e) {
       console.log(e);
     }
-  }
+  };
 
   handleInputChange = (event) => {
     const { value, name } = event.target;
@@ -81,15 +84,20 @@ class MovieSearchOMDB extends Component {
 
   handleAddMovie = async () => {
     try {
-      const { data } = await Axios.post('/api/movies/addmovie', { 
-        movieTitle: this.state.movie.Title, 
-        movieYear: this.state.movie.Year, 
-        movieRating: this.state.movieRating, 
-        movieSad: this.state.movieSad, 
-        movieFunny: this.state.movieFunny, 
-        movieRomance: this.state.movieRomance, 
-        movieAction: this.state.movieAction });
-        this.setState( { section: 0 });
+      const { data } = await Axios.post("/api/movies/addmovie", {
+        movieTitle: this.state.movie.Title,
+        movieYear: this.state.movie.Year,
+        moviePoster: this.state.movie.Poster,
+        movieRating: this.state.movieRating,
+        movieSad: this.state.movieSad,
+        movieFunny: this.state.movieFunny,
+        movieRomance: this.state.movieRomance,
+        movieAction: this.state.movieAction,
+        movieComments: this.state.movieComments,
+        movieCommenter: this.state.movieCommenter,
+      });
+      console.log(data);
+      this.setState({ section: 0 });
     } catch (e) {
       console.log(e);
     }
@@ -109,7 +117,7 @@ class MovieSearchOMDB extends Component {
         return (
           <Wrapper>
             <RenderOMDBMovieCard
-              items={this.state.movie.Title}
+              items={this.state.movie}
               moviePoster={this.state.movie.Poster}
               movieTitle={this.state.movie.Title}
               movieDirector={this.state.movie.Director}
@@ -117,9 +125,9 @@ class MovieSearchOMDB extends Component {
               moviePlot={this.state.movie.Plot}
               movieRated={this.state.movie.Rated}
               movieGenre={this.state.movie.Genre}
-              movieRatingIMDB={this.state.movie["Ratings"][0].Value}
-              movieRatingRT={this.state.movie["Ratings"][1].Value}
-              movieRatingMC={this.state.movie["Ratings"][2].Value}
+              movieRatingIMDB={this.state.movie["Ratings"] ? this.state.movie["Ratings"][0].Value : "N/A"}
+              movieRatingRT={this.state.movie["Ratings"] ? this.state.movie["Ratings"][1].Value : "N/A"}
+              movieRatingMC={this.state.movie["Ratings"] ? this.state.movie["Ratings"][2].Value : "N/A"}
             />
             <RenderMovieRatingForm
               handleAddMovie={this.handleAddMovie}
@@ -134,10 +142,19 @@ class MovieSearchOMDB extends Component {
               movieFunny={this.state.movieFunny}
               movieRomance={this.state.movieRomance}
               movieAction={this.state.movieAction}
+              movieComments={this.state.movieComments}
+              movieCommenter={this.state.movieCommenter}
             />
           </Wrapper>
         );
-
+        case 2:
+          return (
+            <RenderMoviesRated
+              items={this.state.movies}
+              getAllMovies={this.getAllMovies}
+              handleDeleteMovie={this.handleDeleteMovie}
+            />
+          );
       default:
         break;
     }
@@ -145,7 +162,7 @@ class MovieSearchOMDB extends Component {
 
   render() {
     return (
-      <div class = 'body-content' id = 'search-bar'>
+      <div class="body-content" id="search-bar">
         <form onSubmit={(e) => this.handleSubmitOMDB(e)}>
           <input
             name="movieInput"

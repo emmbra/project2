@@ -11,7 +11,7 @@ const getMoviesByAction = 'SELECT * FROM movies WHERE movieAction = true;';
 const getMoviesByRomance = 'SELECT * FROM movies WHERE movieRomance = true;';
 
 // Adding movie ratings
-const addMovie = 'INSERT INTO movies (movieTitle, movieYear, movieRating, movieSad, movieFunny, movieAction, movieRomance) VALUES (?, ?, ?, ?, ?, ?, ?);';
+const addMovie = 'INSERT INTO movies (movieTitle, movieYear, movieRating, movieCommenter, movieComments, moviePoster, movieSad, movieFunny, movieAction, movieRomance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);';
 
 // Updating movie ratings
 const updateMovieRating = 'UPDATE movies SET movieRating = ? WHERE id = ?;';

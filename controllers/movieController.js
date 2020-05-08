@@ -125,7 +125,7 @@ module.exports = {
   },
 
   addMovie: async (req, res) => {
-    const { movieTitle, movieYear, movieRating, movieSad, movieFunny, movieAction, movieRomance } = req.body;
+    const { movieTitle, movieYear, moviePoster, movieComments, movieCommenter, movieRating, movieSad, movieFunny, movieAction, movieRomance } = req.body;
     if (!movieRating) {
       return res.json({ error: 'You must provide a rating for the movie' });
     }
@@ -136,6 +136,9 @@ module.exports = {
           parseInt(movieYear),
           // eslint-disable-next-line radix
           parseInt(movieRating),
+          movieCommenter,
+          movieComments,
+          moviePoster,
           movieSad,
           movieFunny,
           movieAction,

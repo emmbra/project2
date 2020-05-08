@@ -1,12 +1,15 @@
+DROP DATABASE IF EXISTS moviesDB;
 CREATE DATABASE moviesDB;
 USE moviesDB;
 CREATE TABLE movies (
 	id INT AUTO_INCREMENT NOT NULL,
     movieTitle VARCHAR(50) NOT NULL,
     movieYear INTEGER,
-    movieRating DECIMAL(1, 2),
+    movieRating DECIMAL(3, 2),
     movieGenre VARCHAR(50),
-    -- movieComments VARCHAR(50),
+    movieCommenter VARCHAR(50),
+    movieComments VARCHAR(50),
+    moviePoster VARCHAR(255),
     movieSad BOOLEAN,
     movieFunny BOOLEAN,
     movieAction BOOLEAN,
