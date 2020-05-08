@@ -1,5 +1,7 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PacmanLoader from "react-spinners/PacmanLoader";
+import { Grid, List } from 'semantic-ui-react';
 
 class RenderMovieListMoviesDB extends Component {
   renderMovieList = () => {
