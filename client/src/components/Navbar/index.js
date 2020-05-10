@@ -17,9 +17,9 @@ export default class MenuExampleStackable extends Component {
         <Menu stackable>
           <Header as="h2">
             <Icon name="lemon outline" />
-            <Header.Content>
+            <Header.Content className ="customFont">
               Fresh Lemons
-              <Header.Subheader>None of that rotten stuff</Header.Subheader>
+              <Header.Subheader className="customFont">None of that rotten stuff</Header.Subheader>
             </Header.Content>
           </Header>
           <Menu.Menu position="right">

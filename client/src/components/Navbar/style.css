@@ -3,6 +3,10 @@
   padding: 20px;
   background-color: #fff;
 }
+.customFont {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
 .ui.menu {
   background: #fff;
   font-weight: 400;
