@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 // The filename index is a special name in Node
 // If we require a folder in Node and we don't specify a file name
 // Node will automatically look for an index.js inside of that folder
@@ -16,9 +16,9 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
 
-app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+// app.get('/', (request, response) => {
+//   response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+// });
 
 // Any route that goes to slash,
 // Have the router object inside of routes
@@ -27,3 +27,4 @@ app.use(routes);
 
 
 app.listen(PORT);
+ 
