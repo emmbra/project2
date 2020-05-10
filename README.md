@@ -9,7 +9,7 @@ Created a react Movie Rating app with the following features:
   * Movie Title, Poster, Director, Rated, Genre, Year, and Plot
   * IMDB Rating, Rotten Tomatoes Rating, Metacritic Rating
 
-* Users are then able to give the movie a Fresh Lemons rating and submit whether the movie is sad, funny, action, or romance.
+* Users are then able to give the movie a Fresh Lemons rating and denote whether the movie is sad, funny, action, or romance.
 
 * Users can then view all movies that have been rated on Fresh Lemons and delete movies based on movie ID.
 
@@ -19,7 +19,8 @@ Created a react Movie Rating app with the following features:
 * MySQL
 * Express
 * React
-* Node
+* Node.js
+* Semantic UI React
 * HTML5
 * CSS3
 * JavaScript
@@ -36,7 +37,9 @@ Difficulties included:
 
 * CSS styling. Many hours were spent using the inspector tool and adjusting CSS settings to align elements on the page.
 
-* Keeping the code DRY. We had to refactor containers and components when we repeated ourselves and learned a lot about changes components to containers and vice versa as needed.
+* Keeping the code DRY. We had to refactor containers and components when we repeated ourselves and learned a lot about changing components to containers and vice versa as needed.
+
+* Git errors required many hours of troubleshooting to resolve.
 
 
 ## Screenshots
