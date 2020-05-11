@@ -45,7 +45,7 @@ Difficulties included:
 ## Screenshots
 
 ### Demo GIF
-![Fresh Lemons Demo Gif]()
+![Fresh Lemons Demo Gif](https://github.com/emmbra/project2/blob/master/client/src/assets/images/FreshLemonsDemo.gif)
 
 
 ## Credits
