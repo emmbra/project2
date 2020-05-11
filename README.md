@@ -44,14 +44,9 @@ Difficulties included:
 
 ## Screenshots
 
-### Start Screen
-![Screenshot of Start Screen]()
+### Demo GIF
+![Fresh Lemons Demo Gif]()
 
-### Search Results
-![Screenshot of Search Results]()
-
-### Movie List
-![Screenshot of Movie List]()
 
 ## Credits
 
