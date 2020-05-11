@@ -14,9 +14,9 @@ a{
   padding: 20px;
 }
 
-#menunavbar{
-  background-color: #6dfc5400;
-  font-weight: bold;
+.customFont {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
 }
 
 .ui.menu {
