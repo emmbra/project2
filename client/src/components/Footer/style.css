@@ -1,0 +1,16 @@
+.footer{
+  /* color: #005C13; */
+  /* color: #FFD500; */
+  margin: 12em 0em 0em;
+  padding: 1em 0em;
+  text-align:center;
+}
+.footer-text{
+  /* color: #005C13; */
+  color: #FFD500;
+  text-align:center;
+}
+
+.footer-image{
+  width:20px;
+}

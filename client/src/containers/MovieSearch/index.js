@@ -4,7 +4,8 @@ import RenderMovieListMoviesDB from "../../components/RenderMovieListMoviesDB";
 import RenderOMDBMovieCard from "../../components/RenderOMDBMovieCard";
 import RenderMovieRatingForm from "../../components/RenderMovieRatingForm";
 import Wrapper from "../../components/Wrapper";
-import { Container, Header, Segment, Button, Input, Divider } from "semantic-ui-react";
+import { Container, Header, Button, Input, Divider } from "semantic-ui-react";
+import "./style.css";
 
 class MovieSearchOMDB extends Component {
   state = {
@@ -171,8 +172,8 @@ class MovieSearchOMDB extends Component {
     return (
       <div>
         <div id="home-page">
-          <Segment floated="left" vertical>
-            <Container id="home-page-items">
+          {/* <Segment floated="left" vertical> */}
+            <Container id="home-information">
               <Container text>
                 <Header
                   as="h4"
@@ -189,7 +190,7 @@ class MovieSearchOMDB extends Component {
                   inverted
                   style={{
                     fontWeight: "normal",
-                    width: "250px!important",
+                    width: "200px!important",
                   }}
                 />
                 <br/>
@@ -212,7 +213,7 @@ class MovieSearchOMDB extends Component {
                 </Button>
               </form>
             </Container>
-          </Segment>
+          {/* </Segment> */}
         </div>
         <div>{this.renderMain()}</div>
       </div>

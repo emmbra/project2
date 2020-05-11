@@ -27,10 +27,12 @@ class MovieListPage extends Component {
       return "";
     } else {
       return (
+        <div>
         <div className="cardContainer">
           <Card.Group>
             {this.state.movies.map((movie, index) => <SingleMovieCard key={index} movie={movie} />)}
           </Card.Group>
+        </div>
         </div>
       );
     }
