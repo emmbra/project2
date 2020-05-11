@@ -4,35 +4,38 @@ import { Card, Image, Popup, Rating, Grid } from "semantic-ui-react";
 import "./style.css";
 
 function SingleMovieCard(props) {
-  // const PopUpGenerator = (props) => {
-  const popUpGenerator = () => {
+  const popUpSad = () => {
     if (props.movie.movieSad === 1) {
-      return <span class="sad"> </span>;
-    } else if (props.movie.movieSad === 0) {
-      return "not so sad";
-    }
-    if (props.movie.movieFunny === 1) {
-      return <span class="funny"> </span>;
-    } else if (props.movie.movieFunny === 0) {
-      return "not so funny";
-    }
-    if (props.movie.movieRomance === 1) {
-      return <span class="romance"> </span>;
-    } else if (props.movie.movieRomance === 0) {
-      return "noromance";
-    }
-    if (props.movie.movieAction === 1) {
-      return <span class="action"> </span>;
-    } else if (props.movie.movieAction === 0) {
-      return "no Action";
+      return <img src='./image/sad.svg'/>
+    } else {
+      return "";
     }
   };
-  // };
-  // };
+  const popUpFunny = () => {
+    if (props.movie.movieFunny === 1) {
+      return <img src='./image/funny.svg'/>
+    } else {
+      return "";
+    }
+  };
+  const popUpRomance = () => {
+    if (props.movie.movieRomance === 1) {
+      return <img src='./image/romance.svg'/>
+    } else {
+      return "";
+    }
+
+  };
+  const popUpAction = () => {
+    if (props.movie.movieAction === 1) {
+      return <img src='./image/action.svg'/>
+    } else {
+      return "";
+    }
+  };
 
   return (
-    // <Grid relaxed columns={4}>
-    //   <Grid.Column>
+
     <Popup
       trigger={
     <Card>
@@ -51,11 +54,6 @@ function SingleMovieCard(props) {
         <Card.Meta>{props.movie.movieYear}</Card.Meta>
       </Card.Content>
       <Card.Content>
-        {/* {props.movie.movieRating}
-            {props.movie.movieSad}
-            {props.movie.movieFunny}
-            {props.movie.movieRomance}
-            {props.movie.movieAction} */}
         {props.movie.movieCommenter} says: "{props.movie.movieComments}"
       </Card.Content>
     </Card>
@@ -68,15 +66,14 @@ function SingleMovieCard(props) {
           defaultRating={props.movie.movieRating}
           maxRating={5}
         />
-        {props.movie.movieSad}
-        {props.movie.movieFunny}
-        {props.movie.movieRomance}
-        {props.movie.movieAction}
-        <div>{popUpGenerator()}</div>
+
+        <div>
+        <span>{popUpSad()}{popUpFunny()}{popUpRomance()}{popUpAction()}</span>
+
+        </div>
       </Popup.Content>
     </Popup>
-    //   </Grid.Column>
-    // </Grid>
+
   );
 }
 

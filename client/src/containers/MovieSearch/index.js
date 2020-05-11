@@ -197,7 +197,7 @@ class MovieSearchOMDB extends Component {
               </Container>
               <form onSubmit={(e) => this.handleSubmitOMDB(e)}>
                 <Input
-                  size="mini"
+                  size="small"
                   name="movieInput"
                   placeholder="Enter a movie title..."
                   value={this.state.movieInput}
@@ -206,7 +206,7 @@ class MovieSearchOMDB extends Component {
                 <Divider hidden />
                 <Button
                   primary
-                  size="mini"
+                  size="small"
                   onClick={(e) => this.handleSubmitOMDB(e)}
                 >
                   Search for a movie to rate
