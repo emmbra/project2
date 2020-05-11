@@ -29,23 +29,30 @@
   /* object-fit: contain; */
   /* margin: auto; */
 }
-
-
-.sad{
+img{
+  width:40px;
+  display:inline-block;
+}
+/* display inline block  */
+/* .sad{
   background-image: url("./images/sad.svg");
+width: 20px;
 }
 
 .funny{
   background-image: url("./images/funny.svg");
+  width: 20px;
 }
 
 .action{
   background-image: url("./images/action.svg");
+  width: 20px;
 }
 
 .romance{
   background-image: url("./images/romance.svg");
-}
+  width: 20px;
+} */
 
 
  /* body{
