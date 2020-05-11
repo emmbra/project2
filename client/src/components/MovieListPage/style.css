@@ -1,14 +1,13 @@
-body{
-  background-color: black;
-  background-image: url("../../assets/images/lemon.png");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-attachment: fixed;
-  width: 100%;
-  margin: auto;
-}
-
 .cardContainer {
   display: flexbox;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-right: solid;
+  border-left: solid;
+  border-color: #FFD500;
+  margin-bottom: 15%;
+  margin-top:12px;
+
 }
