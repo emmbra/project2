@@ -7,7 +7,6 @@ body{
 #header {
   width: 100%;
   padding: 20px;
-  /* background-color: #fff; */
   background-color: #6dfc54ef;
 }
 .ui.menu {
@@ -15,14 +14,6 @@ body{
   font-weight: 400;
   border: none;
   box-shadow: none;
-}
-/* 
-#home-page {
-  width: 100%;
-  opacity: 80%;
-  height: 350px;
-  background-position: center;
-  background-size: cover;
 }
 
 #home-page-items {
@@ -36,7 +27,7 @@ body{
   border-radius: 20px;
   vertical-align: middle;
   height:300px;
-} */
+}
 .ui.text.container {
   max-width: 250px !important;
 }
@@ -63,21 +54,10 @@ body{
 p{
   font-size:13px;
 }
-
-/* .wrapper{
-  background-color: #fff;
-  width:80%;
-margin-right:10%;
-margin-left:10%;
-border-radius: 5px;
-box-shadow: 0px 5px 10px 2px #5d5d5dab;
-} */
-
 .movie-card {
   width:60%;
   margin: auto;
 }
-
 .ui.segments {
   border: none;
   box-shadow: none;

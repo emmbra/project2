@@ -16,14 +16,14 @@ body{
   box-shadow: none;
 }
 
-#home-page {
+/* #home-page {
   background-image: url("./images/laptop-movie-theater.jpg");
   width: 100%;
   opacity: 80%;
   height: 350px;
   background-position: center;
   background-size: cover;
-}
+}  */
 
 #home-page-items {
   text-align: left;
@@ -60,13 +60,14 @@ body{
   margin: auto;
   padding: 10px;
 }
+
 p{
   font-size:13px;
 }
 
 .wrapper{
-  background-color: #fff;
-  width:80%;
+background-color: #fff;
+width:80%;
 margin-right:10%;
 margin-left:10%;
 border-radius: 5px;

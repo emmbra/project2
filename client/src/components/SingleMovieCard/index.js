@@ -6,21 +6,21 @@ import "./style.css";
 function SingleMovieCard(props) {
   const popUpSad = () => {
     if (props.movie.movieSad === 1) {
-      return <img src='./image/sad.svg'/>
+      return <img src='./image/sad.svg' class = "emoji-image"/>
     } else {
       return "";
     }
   };
   const popUpFunny = () => {
     if (props.movie.movieFunny === 1) {
-      return <img src='./image/funny.svg'/>
+      return <img src='./image/funny.svg'class = "emoji-image"/>
     } else {
       return "";
     }
   };
   const popUpRomance = () => {
     if (props.movie.movieRomance === 1) {
-      return <img src='./image/romance.svg'/>
+      return <img src='./image/romance.svg'class = "emoji-image"/>
     } else {
       return "";
     }
@@ -28,7 +28,7 @@ function SingleMovieCard(props) {
   };
   const popUpAction = () => {
     if (props.movie.movieAction === 1) {
-      return <img src='./image/action.svg'/>
+      return <img src='./image/action.svg'class = "emoji-image"/>
     } else {
       return "";
     }

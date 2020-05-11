@@ -15,7 +15,7 @@
 
 .ui.cards>.card>.content{
   background-color: #6dfc54b0;
-  min-height: 100px;
+  min-height: 80px;
   max-height: 100px;
   opacity: 80%;
 }
@@ -33,42 +33,11 @@
 
 .movieImage{
   width: 100%;
-  /* max-width: 100px; */
-  /* padding: 5px; */
-  /* width: 100%; */
-  /* object-fit: contain; */
-  /* margin: auto; */
 }
-img{
+
+.emoji-image{
   width:40px;
   display:inline-block;
-}
-/* display inline block  */
-/* .sad{
-  background-image: url("./images/sad.svg");
-width: 20px;
-}
-
-.funny{
-  background-image: url("./images/funny.svg");
-  width: 20px;
-}
-
-.action{
-  background-image: url("./images/action.svg");
-  width: 20px;
-}
-
-.romance{
-  background-image: url("./images/romance.svg");
-  width: 20px;
-} */
-
-
- /* body{
-  background-color:lightblue;
-  width: 100%;
-  margin: auto;
 }
 
 #header {
@@ -76,6 +45,7 @@ width: 20px;
   padding: 20px;
   background-color: #fff;
 }
+
 .ui.menu {
   background: #fff;
   font-weight: 400;
@@ -126,9 +96,9 @@ width: 20px;
   margin: auto;
   padding: 10px;
 }
-p{
+/* p{
   font-size:13px;
-}
+} */
 
 .wrapper{
   background-color: #fff;
@@ -147,4 +117,4 @@ box-shadow: 0px 5px 10px 2px #5d5d5dab;
 .ui.segments {
   border: none;
   box-shadow: none;
-} */ 
+} 

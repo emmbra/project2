@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import {Header, Button, Icon, Segment } from 'semantic-ui-react';
+import "./style.css";
+
 
 class MovieCard extends Component {
   state = {

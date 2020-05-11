@@ -47,17 +47,6 @@ class MovieRating extends Component {
     }
   }
 
-  // handleUpdateText = async event => {
-  //   try {
-  //     const { data } = await axios.patch(`/api/todos/${this.props.match.params.todoId}/card`, { text: this.state.inputText });
-  //     this.setState({ todo: data, inputText: '' });
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // }
-
-
-
   render() {
     const { value } = this.state;
     return (
@@ -73,37 +62,6 @@ class MovieRating extends Component {
             <Rating icon='star' defaultRating={3} maxRating={5}
               onChange={this.handleInputChange}
             />
-{/* 
-            <Form.Radio
-              label="1"
-              value="1"
-              checked={value === "1"}
-              onChange={this.handleInputChange}
-            />
-            <Form.Radio
-              label="2"
-              value="2"
-              checked={value === "2"}
-              onChange={this.handleInputChange}
-            />
-            <Form.Radio
-              label="3"
-              value="3"
-              checked={value === "3"}
-              onChange={this.handleInputChange}
-            />
-            <Form.Radio
-              label="4"
-              value="4"
-              checked={value === "4"}
-              onChange={this.handleInputChange}
-            />
-            <Form.Radio
-              label="5"
-              value="5"
-              checked={value === "5"}
-              onChange={this.handleInputChange}
-            /> */}
           </Form.Group>
 
           <Grid columns={2} relaxed="very">
