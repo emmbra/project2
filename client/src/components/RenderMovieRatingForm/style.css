@@ -1,5 +1,6 @@
 body{
-  background-color:lightblue;
+  /* background-color:  #6dfc54b0; */
+  /* background-color:lightblue; */
   width: 100%;
   margin: auto;
 }
@@ -55,7 +56,8 @@ body{
 
 .body-content {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  background-color: white;
+  /* background-color: white; */
+  background-color:  #6dfc54b0;
   width: 80%;
   margin: auto;
   padding: 10px;
@@ -65,7 +67,7 @@ body{
 } */
 
 .wrapper{
-  background-color: #fff;
+  background-color: #6dfc54b0;
   width:80%;
 margin-right:10%;
 margin-left:10%;

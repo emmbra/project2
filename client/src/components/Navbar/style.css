@@ -1,14 +1,26 @@
-#header {
+a{
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}
+
+#header-navbar {
+  /* background: #95ef85; */
+  /* background-image: url("../../assets/images/film-strip.png");
+  background-size: contain; */
+  /* background-color: #7be4687e; */
+  background-color: #6dfc54e0;
   width: 100%;
   padding: 20px;
-  background-color: #fff;
 }
+
 .customFont {
   font-family: 'Lobster', cursive;
   font-size: 30px;
 }
+
 .ui.menu {
-  background: #fff;
+  /* background: #95ef85cc; */
   font-weight: 400;
   border: none;
   box-shadow: none;
