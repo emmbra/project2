@@ -11,10 +11,10 @@ import '../../../src/style.css';
 const App = () => (
     <Router>
       <Navbar/>
-      <Route exact path='/' component={MovieSearch}/>
       <Route exact path='/movies/:id' component={MovieCard}/>
       <Route exact path='/movieratings' component={RenderMovieRatingForm}/>
       <Route exact path='/movieslist' component={MovieListPage}/>
+      <Route path='/' component={MovieSearch}/>
       <Footer/>
     </Router>
 );
