@@ -5,7 +5,6 @@ import RenderOMDBMovieCard from "../../components/RenderOMDBMovieCard";
 import RenderMovieRatingForm from "../../components/RenderMovieRatingForm";
 import Wrapper from "../../components/Wrapper";
 import { Container, Header, Segment, Button, Input, Divider } from "semantic-ui-react";
-import "./style.css";
 
 class MovieSearchOMDB extends Component {
   state = {

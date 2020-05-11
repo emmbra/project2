@@ -5,11 +5,11 @@ a{
 }
 
 #header-navbar {
-  /* background: #95ef85; */
-  /* background-image: url("../../assets/images/film-strip.png");
-  background-size: contain; */
+  /* background: #95ef85;  */
+  background-image: url("../../assets/images/film-strip.png");
+  background-size: contain;
   /* background-color: #7be4687e; */
-  background-color: #6dfc54e0;
+  /* background-color: #6dfc54e0; */
   width: 100%;
   padding: 20px;
 }
