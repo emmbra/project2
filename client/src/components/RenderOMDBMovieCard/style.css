@@ -7,10 +7,11 @@ body{
 #header {
   width: 100%;
   padding: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #6dfc54ef;
 }
 .ui.menu {
-  background: #fff;
+  background: #6dfc54ef;
   font-weight: 400;
   border: none;
   box-shadow: none;

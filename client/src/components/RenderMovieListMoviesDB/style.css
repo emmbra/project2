@@ -1,5 +1,6 @@
 body{
-  background-color:lightblue;
+  background-color:  #6dfc54ef;
+  /* background-color:lightblue; */
   width: 100%;
   margin: auto;
 }
@@ -44,7 +45,7 @@ p{
 }
 
 .wrapper{
-  background-color: #fff;
+  background-color: #6dfc54ef;
   width:80%;
 margin-right:10%;
 margin-left:10%;

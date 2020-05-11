@@ -13,8 +13,8 @@ export default class MenuExampleStackable extends Component {
     // const { activeItem } = this.state;
 
     return (
-      <div id="header">
-        <Menu stackable>
+      <div id="header-navbar" >
+        <Menu stackable id="menunavbar">
           <Header as="h2">
             <Icon name="lemon outline" />
             <Header.Content>
