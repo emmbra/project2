@@ -27,12 +27,12 @@ export default class MenuExampleStackable extends Component {
             <Menu.Item>
             {/* <Menu.Item name="home" onClick={this.handleItemClick}> */}
 
-              <Link to="/"><div className = "menu-items">Home</div></Link>
+              <Link to="/"><div className = "menu-items" className ="customFont">Home</div></Link>
             </Menu.Item>
 
             <Menu.Item>
             {/* <Menu.Item name="viewMovies" onClick={this.handleItemClick}> */}
-              <Link to="/movieslist"><div className = "menu-items">Movie List</div></Link>
+              <Link to="/movieslist"><div className = "menu-items" className ="customFont">Movie List</div></Link>
             </Menu.Item>
 
           </Menu.Menu>
