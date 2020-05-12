@@ -1,26 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Popup, Rating } from "semantic-ui-react";
+import sad from '../../assets/emojis/sad.svg';
+import funny from '../../assets/emojis/funny.svg';
+import romance from '../../assets/emojis/romance.svg';
+import action from '../../assets/emojis/action.svg';
 import "./style.css";
+
+
 
 function SingleMovieCard(props) {
   const popUpSad = () => {
     if (props.movie.movieSad === 1) {
-      return <img src='./image/sad.svg' alt="sad emoji" class="emoji-image" />
+      return <img src={sad} alt="sad emoji" class="emoji-image" />
     } else {
       return "";
     }
   };
   const popUpFunny = () => {
     if (props.movie.movieFunny === 1) {
-      return <img src='./image/funny.svg' alt="tearing laugh emoji" class="emoji-image" />
+      return <img src={funny} alt="tearing laugh emoji" class="emoji-image" />
     } else {
       return "";
     }
   };
   const popUpRomance = () => {
     if (props.movie.movieRomance === 1) {
-      return <img src='./image/romance.svg' alt="lovey eyes emoji" class="emoji-image" />
+      return <img src={romance} alt="lovey eyes emoji" class="emoji-image" />
     } else {
       return "";
     }
@@ -28,7 +34,7 @@ function SingleMovieCard(props) {
   };
   const popUpAction = () => {
     if (props.movie.movieAction === 1) {
-      return <img src='./image/action.svg' alt="head blowing up emoji" class="emoji-image" />
+      return <img src={action} alt="head blowing up emoji" class="emoji-image" />
     } else {
       return "";
     }
