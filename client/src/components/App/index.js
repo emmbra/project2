@@ -14,7 +14,7 @@ const App = () => (
       <Route exact path='/movies/:id' component={MovieCard}/>
       <Route exact path='/movieratings' component={RenderMovieRatingForm}/>
       <Route exact path='/movieslist' component={MovieListPage}/>
-      <Route path='/' component={MovieSearch}/>
+      <Route exact path='/' component={MovieSearch}/>
       <Footer/>
     </Router>
 );
