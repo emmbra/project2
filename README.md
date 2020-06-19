@@ -1,6 +1,6 @@
 # Project 2: Fresh Lemons - Movie Rating App
 
-[Run Wild - Trail Run Finder](https://eb-movie-rating-app.herokuapp.com/)
+[Fresh Lemons - Movie Rating App](https://freshlemons.herokuapp.com/)
 
 ## Description
 Created a react Movie Rating app with the following features:
